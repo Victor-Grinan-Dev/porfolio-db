@@ -8,7 +8,7 @@ const app = express();
 //   res.send("server running");
 // });
 app.get("/", (req, res) => {
-  res.send("server running");
+  res.json("server running");
 });
 
 app.listen(PORT, () => {
