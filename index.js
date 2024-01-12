@@ -4,7 +4,7 @@ const PORT = process.env.SERVER_PORT || 5000;
 
 const app = express();
 
-app.get("/", (req, res) => {
+app.use("/", (req, res) => {
   res.send("server running");
 });
 
